@@ -3,17 +3,19 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-body {
+  
+  body {
     /* more on this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
+  
   /* apply styles to <header> */
-header {
+  header {
     padding: 20px 35px;
     background-color: #39a6b2;
   }
+  
   header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -21,62 +23,82 @@ header {
     margin: 0;
     display: inline;
   }
-  
   header a {
     text-decoration: none;
     color: #fce138;
   }
+  
   header nav {
     float: right;
     margin: 7px 0;
   }
+  
   header nav ul li {
     display: inline;
   }
-
+  
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
   }
-
+  
+  footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+  }
+  
+  footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: #024e76;
+  }
+  
   section {
     padding: 60px;
   }
-
-  .hero-form h3 {
-      margin: 0px;
-      font-size: 30px;
-  }
-
+  
   /* Hero Style Start */
-.hero {
-    background-image: url("../images/hero-bg.jpeg");
+  .hero {
+    background-image: url('../images/hero-bg.jpeg');
     height: 600px;
     background-size: cover;
     background-position: center;
     position: relative;
   }
   /* Hero Style End */
+  
   .hero-form {
+    border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
     width: 500px;
     color: #024e76;
-    border: solid 3px #024e76;
     position: absolute;
     bottom: 120px;
     right: 140px;
   }
-
+  
+  .hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+  }
   .hero-form p {
-      margin: 5px 0 15 px 0;
+    margin: 5px 0 15px 0;
   }
-
-  .hero-form label {
-    margin: 0 5px;
-  }
-
+  
   .form-input {
     border: 1px solid #024e76;
     display: block;
@@ -86,7 +108,11 @@ header {
     width: 100%;
     margin-bottom: 15px;
   }
-
+  
+  .hero-form label {
+    margin: 0 5px;
+  }
+  
   .hero-form button {
     color: #fce138;
     background-color: #024e76;
@@ -94,11 +120,11 @@ header {
     padding: 10px 20px;
     font-size: 16px;
   }
-
+  
   .intro {
-      text-align: center;
+    text-align: center;
   }
-
+  
   .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -106,11 +132,12 @@ header {
     font-size: 20px;
     margin: 0 auto;
   }
-
+  
   .steps {
     text-align: center;
     background: #fce138;
   }
+  
   .steps div {
     margin-bottom: 80px;
   }
@@ -130,11 +157,11 @@ header {
     color: #39a6b2;
     font-size: 23px;
   }
-
+  
   .steps span {
     font-size: 38px;
   }
-
+  
   .section-title {
     font-size: 55px;
     color: #024e76;
@@ -144,10 +171,18 @@ header {
     border-bottom: 3px solid;
   }
   
-
+  .primary-border {
+    border-color: #fce138;
+  }
+  
+  .secondary-border {
+    border-color: #39a6b2;
+  }
+  
   .trainers {
     text-align: center;
   }
+  
   .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
@@ -155,6 +190,7 @@ header {
     color: #fce138;
     overflow: auto;
   }
+  
   .trainer img {
     width: 35%;
     float: left;
@@ -165,14 +201,7 @@ header {
     float: left;
     width: 65%;
   }
-  .text-left {
-    text-align: left;
-  }
   
-  .text-right {
-    text-align: right;
-  }
-
   .trainer-bio h3 {
     font-size: 32px;
     margin-bottom: 8px;
@@ -188,30 +217,30 @@ header {
     font-size: 17px;
     line-height: 1.3;
   }
-
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  /* REACH OUT STYLES START */
   .contact {
-    background: #024e76;
     text-align: center;
+    background: #024e76;
   }
-
-  .section-title {
-    font-size: 55px;
-    display: inline-block;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    margin-bottom: 35px;
-    color: #024e76;
-  }
-
+  
   .contact h2 {
-      color:#fce138
+    color: #fce138;
   }
-
+  
   .contact-info iframe {
     width: 400px;
     height: 400px;
   }
-
+  
   .contact-info div {
     width: 410px;
     display: inline-block;
@@ -220,12 +249,14 @@ header {
     margin: 30px 0 0 60px;
     color: white;
   }
+  
   .contact-info h3 {
     color: #fce138;
     font-size: 32px;
   }
   
-  .contact-info p, .contact-info address {
+  .contact-info p,
+  .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20px;
@@ -235,34 +266,6 @@ header {
   .contact-info a {
     color: #fce138;
   }
-
-
-  .primary-border {
-    border-color: #fce138;
-  }
   
-  .secondary-border {
-    border-color: #39a6b2;
-  }
-
-  footer {
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-  }
-  footer h2 {
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-
-  }
-  footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-  }
-
-  footer a {
-    color: #024e76;
-  }
+  /* REACH OUT STYLES END */
+  
